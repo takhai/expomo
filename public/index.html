@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MO's ART</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.11.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.11.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.11.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.11.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.11.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Limelight|Yanone+Kaffeesatz" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+   
+  </head>
+  <body>
+      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+      <script>
+          window.sr = ScrollReveal();
+  
+          if (sr.isSupported()){
+              document.documentElement.classList.add('sr');
+  
+          }
+      </script>
+      <style>
+          .sr .col-md-4.two{
+              visibility: hidden;
+          }
+          .sr .col-md-8.three {
+              visibility: hidden;
+          }
+          .sr .col-md-12.one {
+            visibility: hidden;
+          }
+          .sr .col-md-8.four {
+              visibility: hidden;
+          }
+          .sr .col-md-4.five {
+              visibility: hidden;
+          }
+          .sr .col-md-12.six {
+            visibility: hidden;
+          }
+      </style>
+  
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About MO</h4>
+              <p class="text-white">Mo geboren te Aruba in het jaar 1944. Zijn werken worden door sommige beschreven als ''mystiek decoratief''. Mo is altijd en elke dag aan het werken. Zijn passie voor het schilderen begon op jonge leeftijd. En hij wist toen al dat hij de schilderkunst wilde gaan beoefenen. Na zijn studiejaren en enkele baantjes te hebben gehad in Nederland, besloot hij als profesioneel te gaan schilderen. Mo is intussen langer dan 40 jaar bezig met beeldende kunst.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Call +297 742 5192</a></li>
+                <li><a href="https://facebook.com/mosartaruba/" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <!--SVG brand logo-->
+            <svg id="svg_7" viewBox="0 0 744.09448819 1052.3622047" height="1vw" width="1vw" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" style="width: 10vw;min-width: 10vw;height: 10vw;">
+
+              <metadata id="svg_5">image/svg+xml</metadata>
+              <g id="svg_2">
+               <path fill="#1a1a1a" stroke-opacity="0" id="svg_4" d="m87.28093,843.07583c0,-0.31969 1.88851,-10.76612 4.19669,-23.21429c2.30817,-12.44817 3.83093,-24.45028 3.38391,-26.67135c-0.35701,-38.74242 -4.2154,-83.71739 -4.96531,-120.02627c-2.09416,-120.63998 -2.8027,-132.60217 -15.07055,-241.14312c-5.70261,-42.22638 -8.78782,-54.64925 -0.0762,-70.8432c59.12613,11.35622 83.40372,122.47498 109.49441,106.49224c25.94289,-8.30561 37.45162,-69.07165 50.79574,-97.58419c28.79372,-63.45488 34.83452,-68.84925 54.83901,-87.57144c29.28591,67.70893 39.69915,114.18319 52.61586,169.7143c2.82232,11.86293 8.56912,44.83657 10.95504,62.85713c5.39215,40.72592 8.16205,59.28619 12.79185,85.71429c16.87472,83.15285 20.86837,76.86057 3.53953,95.91724c-37.60815,28.94669 -24.54556,28.75564 -47.0858,-32.33864c-20.4538,-77.81079 -20.41465,-83.17648 -30.99779,-162.86432c-4.90029,-52.0087 -7.38802,-110.11139 -36.77356,-57.99193c-14.72248,64.93812 -16.85099,83.15355 -25.44627,126.04879c-8.49356,23.36607 -20.40825,27.97015 -24.17436,25.64257c-36.14936,-39.86337 -46.59604,-68.43465 -80.31111,-74.41371c9.17323,98.6139 28.57017,226.18738 35.84638,304.32963c-9.61985,2.81727 -65.10127,27.9488 -73.55749,17.94627l0.00002,0z"></path>
+               <path fill="#1a1a1a" stroke-opacity="0" id="svg_3" d="m504.20366,167.88024c-77.2681,-0.00012 -129.9063,155.10037 -129.90625,297.08398c-0.00005,141.98362 66.63815,243.0841 143.90625,243.08398c77.2681,0.00012 143.9063,-127.10036 143.90625,-269.08397c0.00005,-141.98362 -80.63815,-271.08411 -157.90625,-271.08399zm2.42382,150.59375c24.54662,0.002 40.32338,10.35374 52.44532,101.45898c6.95337,52.25965 6.41678,119.36331 -50.44532,137.46094c-54.91559,-3.0601 -61.09559,-79.45327 -52.44726,-131.46094c14.14225,-85.04595 25.89988,-107.45963 50.44726,-107.45898z"></path>
+              </g>
+             </svg>
+            <!--strong>Gallery</strong-->
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      
+      <section class="jumbotron text-center">
+        <div class="container fronttext">
+          <h1 class="jumbotron-heading">MO's Art Gallery</h1>
+          <p class="lead text-muted">Mo :"Ik ben op de kunstacademie van God en daarom altijd bezig aan het leren".</p>
+          <p>
+            <!--a href="#" class="btn btn-primary my-2">Artworks</a-->
+            <a href="#cont" class="btn btn-secondary my-2">Contact Mo</a>
+          </p>
+        </div>
+      </section>
+</main>
+
+<section>
+    <div>
+        <h3 class="title">Artworks</h3>
+    </div>
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            
+            
+            <div class="col-md-12 one">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="https://zcpjqw.bl.files.1drv.com/y4mAd_DK1pxcZP0b-EO-Ak3eX_E19aWIEVQ_fuKJLP8YSWhz63Ekjv2QgX0qnPqMsP_Wj1I2Q_9EaysfUa_5P7EwubNKUy5roho_lh0JqU0sC562RGlTEj9XLLWW8T-aN1YLys1k_k4NaFdA6yy9AO1iV8CEE6aeK3SXFYxBS0tU_NjxetsSjVzsZVHuH-rgd1q4PH1-CXKqGY5TaU69XeDIQ?width=715&height=550&cropmode=none" alt="Card image cap">
+            
+              </div>
+            </div>
+            <div class="col-md-4 two">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="https://zsqs5q.bl.files.1drv.com/y4mDUniaMgmttpGsO8dz9bkojBlQmq_vM9vE6-65Hx0rbh0YUNNiluBYwXq3Otbn-UFN9NPJpCWCy08khOdtFLgnX1zLU22WKUVYoBpgLP6Cw6DC27Ivv3_THAEEQUETjM3ww1__Q5VRJC2LuqmqiC5o8Kc143eZrW5dRSJ9Kr8mBch4_5SqHL-RGsEt9RiAOBJb__IzqB_od81srjvIx-L8A?width=409&height=522&cropmode=none" alt="Card image cap">
+                
+              </div>
+            </div>
+            <div class="col-md-8 three">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="https://y8qs5q.bl.files.1drv.com/y4mYIiITrQZ0BSFcjbte2O_XkLxM6zFUYNIOFts0P51U3t2Uwr8Wcws8_5nthqFkaDAHl0MxyWkUxyTZ9nVYzI9c7kt4zKjcke2ZsIDksa5xjlK5VxpmWphzostgkDzwzWvTsuLVj-2I3am6uOJwTkTwqWqaQcwSrVrTEXUQ83uKY14kdOGiQna-8GvBUpVGrlrIiNlzHWGVd7r_AfKjDNdQg?width=404&height=550&cropmode=none" alt="Card image cap">
+                
+              </div>
+            </div>
+            <div class="col-md-8 four">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="https://y89twg.bl.files.1drv.com/y4mwwBRT-DF7pPSuvsPSBrfVIr23snUvOPiMMVOPE-VA6ok63QbTcWM2QqFR5jL5R_ErA347SOCKqPKA_0G1scNtFUUE9gDG4ThYOgmwbUibbZFKefKm0K4iWXWqeBkdfyRRKdTkw02LtSUqCxlgsKdh9ikk_bsfwxmuTusWje5RTd1Zpwvo9_x75jhdgA9W_DxO7FinzDIMdZWa6eP7iIARw?width=415&height=541&cropmode=none" alt="Card image cap">
+                
+              </div>
+            </div>
+            <div class="col-md-4 five">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="https://zcqs5q.bl.files.1drv.com/y4mh4ow5-bJrQDpI7R9sUVCJHvmcRVOqirh7Z90vEqmkfcIqFfruU0_ORLJjwp7zzmlY97f2clVSPlgtvJr0YIJMR1Wc2hlGgfvmk1MLqucAPR5qAGBnOBclXVUmTu9yNPMmK3HkW9DS9CoDo-vK7PqBjpAgxhIWypYCMqPswHpJI7qdA6whC4swuf6a8MCLCNjUHzbJJvmH-wsxMA7L-Isiw?width=413&height=550&cropmode=none" alt="Card image cap">
+                
+              </div>
+            </div>
+            <div class="col-md-12 six">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="https://ym9twg.bl.files.1drv.com/y4mkxs5IShFiZIokQ74mc8LbMEAtSjChQTVh66gK2BNd82oKFkH2swR2l52CsoZn3I0Lk_4WQSBZJX1Z5odixWzZOEsDZmD2xv8h2ZbUTCm2L_0YLUFsBmNBMAP_5nYpNR9SuamLb3uKubeP84DdWmoLG7alJ9oYim7qT3oftCe2uJBIgRFzfFz6OhVjWNaNuSKfUFrZjO9o4AfCYo8jw2KWQ?width=798&height=363&cropmode=none" alt="Card image cap">
+                
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+</section>
+
+<section>
+      <div>
+          <h3 class="title">Exhibitions</h3>
+      </div>
+      <div class="container">
+      <div class="row align-items-center">
+        <p>     <ul class="exhb">
+                  <li>2018 Permanent Exhibition at Mo's residence, San Nicolas Aruba </li>
+                  <li>2017 ART FAIR Aruba, San Nicolas Aruba.</li>
+                  <li>2016 ART FAIR Aruba Dedicated to Mo, San Nicolas Aruba.</li>
+                 </ul>
+        </p>
+      </div>
+      <div>
+        <a href="https://docs.google.com/document/d/12LCbn8MhQME5vWnIP1ExFzRbNNMxqU4CKM0tfLXv8IQ/edit?usp=sharing"><h5 class="cv">Complete Curriculum Vitae</h5></a>
+                
+        <!--iframe src="https://drive.google.com/file/d/1cRwFrUvPfr4MgYBkO9a36cSvVB5IP5dJ/preview"  height="480"></iframe-->       
+      </div>
+      <hr>
+      </div>
+</section>
+
+<br>
+
+<section>
+    <div>
+        <h3 class="title">MO's World of Art</h3>
+      </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-6 molog">
+
+<!--SVG-->
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <defs>
+  <symbol id="svg_6" viewBox="0 0 744.09448819 1052.3622047" height="297mm" width="210mm" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+
+   <metadata id="svg_5">image/svg+xml</metadata>
+   <g id="svg_2">
+    <path fill="#1a1a1a" stroke-opacity="0" id="svg_4" d="m87.28093,843.07583c0,-0.31969 1.88851,-10.76612 4.19669,-23.21429c2.30817,-12.44817 3.83093,-24.45028 3.38391,-26.67135c-0.35701,-38.74242 -4.2154,-83.71739 -4.96531,-120.02627c-2.09416,-120.63998 -2.8027,-132.60217 -15.07055,-241.14312c-5.70261,-42.22638 -8.78782,-54.64925 -0.0762,-70.8432c59.12613,11.35622 83.40372,122.47498 109.49441,106.49224c25.94289,-8.30561 37.45162,-69.07165 50.79574,-97.58419c28.79372,-63.45488 34.83452,-68.84925 54.83901,-87.57144c29.28591,67.70893 39.69915,114.18319 52.61586,169.7143c2.82232,11.86293 8.56912,44.83657 10.95504,62.85713c5.39215,40.72592 8.16205,59.28619 12.79185,85.71429c16.87472,83.15285 20.86837,76.86057 3.53953,95.91724c-37.60815,28.94669 -24.54556,28.75564 -47.0858,-32.33864c-20.4538,-77.81079 -20.41465,-83.17648 -30.99779,-162.86432c-4.90029,-52.0087 -7.38802,-110.11139 -36.77356,-57.99193c-14.72248,64.93812 -16.85099,83.15355 -25.44627,126.04879c-8.49356,23.36607 -20.40825,27.97015 -24.17436,25.64257c-36.14936,-39.86337 -46.59604,-68.43465 -80.31111,-74.41371c9.17323,98.6139 28.57017,226.18738 35.84638,304.32963c-9.61985,2.81727 -65.10127,27.9488 -73.55749,17.94627l0.00002,0z"/>
+    <path fill="#1a1a1a" stroke-opacity="0" id="svg_3" d="m504.20366,167.88024c-77.2681,-0.00012 -129.9063,155.10037 -129.90625,297.08398c-0.00005,141.98362 66.63815,243.0841 143.90625,243.08398c77.2681,0.00012 143.9063,-127.10036 143.90625,-269.08397c0.00005,-141.98362 -80.63815,-271.08411 -157.90625,-271.08399zm2.42382,150.59375c24.54662,0.002 40.32338,10.35374 52.44532,101.45898c6.95337,52.25965 6.41678,119.36331 -50.44532,137.46094c-54.91559,-3.0601 -61.09559,-79.45327 -52.44726,-131.46094c14.14225,-85.04595 25.89988,-107.45963 50.44726,-107.45898z"/>
+   </g>
+  </symbol>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <use x="100" y="20" transform="matrix(1.3899746165866702,0,0,1.3899746165866702,-217.06357393267353,-86.65020377833025) " xlink:href="#svg_6" id="svg_7"/>
+ </g>
+</svg>
+ </div>
+    
+ 
+ <div class="col-md-6 mt-5">
+                <div class="video-sec">
+                    <h4 class="heading-small">Conoce mi ("Know me")</h4>
+                    <div class="video-block">
+                        <div class="embed-responsive embed-responsive-16by9">
+
+                        <iframe src="https://player.vimeo.com/video/177556319?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                      </div>
+                  </div>
+                  </div>
+        </div>
+    </div>
+
+</section>
+<br>
+
+<section>
+    <div>
+      <h3 class="title">News & PR </h1>
+    </div>
+    <!-- Carousel Slider -->
+    <div id="carouselLogo" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselLogo" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselLogo" data-slide-to="1"></li>
+            <li data-target="#carouselLogo" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="d-block img-fluid" src="https://z8pjqw.bl.files.1drv.com/y4mRuerKpjT6X2yahfGjeMKHsPcttpkfh7KiAwb2LQnKyZkl7Ham9o3Jm4qGOAOO9Yax4fkPYPiLCJhodsdez4EHRwAsxRw2F0tYusQuUlb_lN5p8RNA4VvVKjmLXgv38Zjiz6Tpz4A8OhAMdfx9_G7QPgTh_EnofDbA8Rhktpsv0f5KVWHo3fD_uMLf063P9Nwcy1nZ6NVzZZ1jiA-Hj2H6A?width=1920&height=700&cropmode=none" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://zmpjqw.bl.files.1drv.com/y4mD7jQEg1KmT36-8erNCWYc0h_8CzZ3om2aQm46FKeNGJUlw-R4udihVVBWPkQcYeJFhMimOzHuGI4l2nw5z20FnQ_DIEoF6JTVOnrxO6X4JYyk7oyKjdwDO0YzE3jhgAnT5tq7pXeEl4WZGZg6uAEBRJYcnV33inZnm17RIzmdh0Jkuzo9OrJ0ZJ-h-mD0jfp0uKy7u5AAb4QMtzRsm8OdQ?width=1920&height=700&cropmode=none" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" src="https://ycpjqw.bl.files.1drv.com/y4mILud8reSqPrKtz-xRMV9MJWG-16QpnWOvpsjr0TqZLnGbGjYvW6BoevGY41tEJ86ZGmSZpOPp0jkfDKdKrPaUIZI38oP2gnZNxZ8YYHGYcYdRfPH10ikn03RookVv2MEsXVBf-7d74hh3gsA4kIzhW_-9wNVdTLchgtEncgnxqYGFIpGpsTvyCFfke4YsrMQMqkSW2lVBX4tLRQx7WHPpw?width=1920&height=700&cropmode=none" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselLogo" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselLogo" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- Carousel Slider -->
+
+  </section>
+  <br>
+
+<!--Contact us-->
+<section class="cont" id="cont">
+      <div>
+        <h3 class="title">Contact Mo</h1>
+      </div>
+      <div class="container">
+          <div class="row foot">
+            <div class="col-sm-4">
+            
+              <!-- About Us -->
+              <h5 class="section_footer__heading">
+                About Mo
+              </h5>
+              <p>
+                Mo is kunstschilder, muzikant, dichter en levensgenieter. Motto : "Divine as usual". 
+              </p>
+    
+            </div>
+            <div class="col-sm-4">
+            
+              <!-- Contact info -->
+              <h5 class="section_footer__heading">
+                Contact info
+              </h5>
+              <ul class="section_footer__info">
+                <li>
+                  <i class="fa fa-map-marker"></i> Sero Bentanaweg 33, San Nicolas, Aruba
+                </li>
+                <li>
+                  <i class="fa fa-phone"></i> +297 742 5192
+                </li>
+                <li>
+                  <i class="fa fa-envelope-o"></i> <a href="mailto:takhai.m@gmail.com">takhai.m@gmail.com</a>
+                </li>
+              </ul>
+    
+            </div>
+            <div class="col-sm-4">
+            
+              <!-- Opening hours -->
+              <h5 class="section_footer__heading">
+                Opening hours
+              </h5>
+              <div class="section_footer__open">
+                <div class="section_footer__open__days">Monday - Thursday</div>
+                <div class="section_footer__open__time">10:00 AM - 11:00 PM</div>
+              </div>
+              <div class="section_footer__open">
+                <div class="section_footer__open__days">Friday - Sunday</div>
+                <div class="section_footer__open__time">12:00 AM - 03:00 AM</div>
+              </div>
+    
+            </div>
+          </div> <!-- / .row -->
+      </div>
+</section>
+
+<!--Footer-->
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p> &copy; 2018 Mo </p>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+<script>
+    window.sr = ScrollReveal({ reset: false });
+    sr.reveal('.col-md-12.one', {duration: 2300, scale : 0.1 });
+    sr.reveal('.col-md-4.two', {duration: 3000, scale : 0.1 });
+    sr.reveal('.col-md-8.three', {duration: 2000, scale : 0.1 });
+    sr.reveal('.col-md-8.four', {duration: 3000, scale : 0.1 });
+    sr.reveal('.col-md-4.five', {duration: 2000, scale : 0.1 });
+    sr.reveal('.col-md-12.six', {duration: 2300, scale : 0.1 });
+
+    
+</script>

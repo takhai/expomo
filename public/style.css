@@ -1,0 +1,343 @@
+body {
+
+
+    background-color: #ffffff;
+   /*background-image:url(https://static1.squarespace.com/static/579655eb725e2592957b128a/t/57e1a6a729687fa8f38ca92f/1474406067823/ES-Home-1.jpg?format=2500w); */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   size: 100vh;
+   height: -webkit-fill-available;
+   height: 100vh;
+   color: rgba(0,0,0,0.87); 
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+   margin: 0; padding: 0; }
+   
+   #message { background: rgba(255, 255, 255, 0); max-width: 100%; margin: auto; padding: 32px 24px; border-radius: 3px;text-align: center; padding-top: 300px;}
+   #message h2 { color: rgb(255, 157, 0);
+   font-weight: bold;
+   font-size: 8vw;
+   margin: 0 0 8px; }
+   #message h1 { font-size: 5vw;
+   font-weight: 300;
+   color: rgb(232, 241, 241);
+   margin: 0 0 16px;
+   font-family: 'Limelight', cursive;}
+
+   #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+   #message a { display: initial; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+   /*#message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }*/
+   #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+   
+   
+   
+   @media (max-width: 600px) {
+     body, #message { margin-top: 0; background: rgba(255, 255, 255, 0); box-shadow: none; }
+     body { 
+     /*background-image:url(http://i.vimeocdn.com/video/584993447_1280x720.jpg); */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     size: 100vh;
+     height: -webkit-fill-available;
+     height: 100vh;
+     text-align: left;
+     background-color: #ffffff!important;
+       
+       }
+
+ 
+
+.bg-dark {
+  background-color: #343a40!important;
+}
+
+
+/*Link and hover link*/
+a {
+  color: #647372;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #ffffff;
+
+}
+
+/*Mo logo brand
+#svg_7 {
+  width: 10vw;
+  min-width: 10vw;
+  height: 10vw;
+}
+
+
+
+svg#svg_7 {
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50px;
+  width: 50px;
+  height: 100%;
+  
+}
+
+/*Header*/
+
+section.jumbotron.text-center {
+  background-color: #ffffff;
+  background-image: url(https://xcpcqa.bl.files.1drv.com/y4m7AGAv9Elb0gjZNCLTEoCOXupsJi53Kzmr0FOR4FN_yYNzz6htT_xlOvxQbsrSkf5mcubfCTm40rWwm30TvleeFjPmkdQN5D7fpgFxj2i18rAGswC4FYyq9M0oupSgWuQl0cBIGFLEb98BMb0vcg1jNy6TKL4hFeh2m1_6GBKvCvLcHtQq5FaMBvsoA_82M2cFxOD8JeSI8qrfx5eeTIMew?width=1791&height=986&cropmode=none);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: -webkit-fill-available;
+  width: 100%;
+  top: 50%;
+}
+
+
+
+
+   }
+
+
+   .container.fronttext {
+    margin-top: 11vw;
+}
+   
+
+   h1.jumbotron-heading {
+    font-family: 'Limelight', cursive;
+    font-size: 6.5vw;
+
+  }
+  
+
+   section.jumbotron.text-center {
+    background-color: #ffffff;
+    background-image: url(https://xcpcqa.bl.files.1drv.com/y4m7AGAv9Elb0gjZNCLTEoCOXupsJi53Kzmr0FOR4FN_yYNzz6htT_xlOvxQbsrSkf5mcubfCTm40rWwm30TvleeFjPmkdQN5D7fpgFxj2i18rAGswC4FYyq9M0oupSgWuQl0cBIGFLEb98BMb0vcg1jNy6TKL4hFeh2m1_6GBKvCvLcHtQq5FaMBvsoA_82M2cFxOD8JeSI8qrfx5eeTIMew?width=1791&height=986&cropmode=none);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: -webkit-fill-available;
+    width: 100%;
+}
+
+p.lead.text-muted {
+  color: #8b8b86!important;
+}
+
+.h3.title, h3.title {
+  font-size: -webkit-xxx-large;
+    font-family: 'Limelight', cursive;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/*Artworks*/
+.bg-light {
+  background-color: #ffffff!important;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  /* padding: 1.25rem; */
+}
+
+
+/*Animations Artwork*/
+
+
+
+.col-md-4.two, .col-md-8.three, .col-md-12.one, .col-md-8.four,.col-md-4.five , .col-md-12.six  {
+  width: 100%;
+  visibility: visible;
+  -webkit-transform: translateY(0) scale(1) rotateX(0) rotateY(0) rotateZ(0);
+  opacity: 1;
+  transform: translateY(0) scale(1) rotateX(0) rotateY(0) rotateZ(0);
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+  transition: transform 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Recent exhibitions*/
+.row.align-items-center {
+  padding: 10px;
+  line-height: 1.9;
+  margin-top : 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+ul.exhb {
+  font-size: x-large;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+}
+
+
+/*Curicullum Vitae*/
+
+h5.cv {
+  text-align: right;
+}
+
+
+/*
+
+iframe {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: -ms-available;
+    width: -o-available;
+    width: 75vw;
+    margin-left: 10%;
+    margin-right: auto;
+} 
+
+
+
+@media(max-width: 639px) {
+  iframe {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: -ms-available;
+    width: -36vw;
+    height: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+
+
+/*Mo's world of art*/
+p.lead {
+  margin-top: 5rem;
+}
+
+.col-md-6.molog {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+/*SVG animation*/
+path#svg_4 {
+  fill-opacity: 0.1;
+  animation: draw 4s infinite linear;
+  fill: #c8ae7d;
+}
+
+
+path#svg_3 {
+  fill-opacity: 0.1;
+    animation: draw 3.8s infinite linear;
+    fill: #c8ae7d;
+}
+
+
+@keyframes draw {
+  to {
+    fill-opacity : 1;
+    fill: #000;
+
+  }
+}
+
+
+
+/*Contact*/
+section.cont {
+  background-color: #343a40!important;
+  color: white;
+  font-size: larger;
+  line-height: 1.8;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+.container.contact {
+  height: 300px;
+  padding-top: 30px;
+}
+
+
+
+/*Footer*/
+footer.text-muted {
+  background-color: #212121;
+  height: fit-content;
+  font-family: inherit;
+}
+
+.row.foot {
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul.section_footer__info {
+  list-style: none;
+  left: 0; 
+  padding-left: 0;
+}
+
+.section_footer__open {
+  letter-spacing: 0.5px;
+}
