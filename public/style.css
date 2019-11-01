@@ -258,7 +258,6 @@ p.lead {
 }
 
 .col-md-6.molog {
-  margin-top: 3rem;
   text-align: center;
 }
 
@@ -268,6 +267,16 @@ path#svg_4 {
   animation: draw 4s infinite linear;
   fill: #c8ae7d;
 }
+
+/*Blaka poem*/
+
+img.poem {
+  position: static; 
+    width: 100%;
+    top: 0;
+
+}
+
 
 
 path#svg_3 {
