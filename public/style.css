@@ -135,8 +135,7 @@ section.jumbotron.text-center {
 
 p.lead.text-muted {
   color: #8b8b86!important;
-  font-size: xx-large;
-
+  font-size: -webkit-xxx-large;
 }
 
 
@@ -259,15 +258,14 @@ iframe {
 
 /*Mo's world of art*/
 p.lead {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .col-md-6.molog {
   text-align: center;
 }
 
-/*SVG animation*/
-path#svg_4 {
+/*SVG animation
   fill-opacity: 0.1;
   animation: draw 4s infinite linear;
   fill: #c8ae7d;
@@ -279,6 +277,13 @@ img.poem {
   position: static; 
     width: 100%;
     top: 0;
+}
+
+/*video mo title */
+
+h4.heading-small {
+  text-align: right;
+  margin: 15px 0 0 0;
 }
 
 
@@ -336,6 +341,16 @@ footer.text-muted {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-mobile {
+  font-size: 20px
+  
+}
+
+.fa-envelope-o {
+  font-size: 18px
+  
 }
 
 ul.section_footer__info {
